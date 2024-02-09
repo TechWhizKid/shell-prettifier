@@ -1,0 +1,92 @@
+# Adjust your $PATH if you are coming from bash.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Specify the path to your oh-my-zsh installation.
+export ZSH=~/.oh-my-zsh
+
+# Choose the theme to load. You can set this to "random"
+# to load a random theme each time oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes for available themes.
+ZSH_THEME="agnoster"
+
+# Define the list of themes to load when ZSH_THEME is set to "random".
+# This will override the default list of themes in ~/.oh-my-zsh/themes/.
+# An empty array will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Enable case-sensitive completion if you want.
+# CASE_SENSITIVE="true"
+
+# Enable hyphen-insensitive completion if you want. Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Disable bi-weekly auto-update checks if you want.
+# DISABLE_AUTO_UPDATE="true"
+
+# Change how often to auto-update (in days) if you want.
+# export UPDATE_ZSH_DAYS=13
+
+# Disable colors in ls if you want.
+# DISABLE_LS_COLORS="true"
+
+# Disable auto-setting terminal title if you want.
+# DISABLE_AUTO_TITLE="true"
+
+# Enable command auto-correction if you want.
+# ENABLE_CORRECTION="true"
+
+# Display red dots whilst waiting for completion if you want.
+# COMPLETION_WAITING_DOTS="true"
+
+# Disable marking untracked files under VCS as dirty if you want. This makes repository status check for large repositories much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Change the command execution time stamp shown in the history command output if you want.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Use another custom folder than $ZSH/custom if you want.
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Load the plugins you want to use. (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Be careful, as too many plugins slow down shell startup.
+plugins=(
+  git
+  zsh-syntax-highlighting
+  zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Choose your preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Set compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set ssh key path
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# Define your own aliases here, overriding those provided by oh-my-zsh libs, plugins, and themes. 
+# Aliases can be placed here, though oh-my-zsh users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Run custom commands after starting the terminal
+echo "" && neofetch --ascii_colors 7 --colors 4 4 4 4 --config ~/.config/neofetch/settings.conf
