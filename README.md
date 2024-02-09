@@ -9,7 +9,7 @@ Shell Prettifier is a simple script that beautifies your terminal with plugins.
 To install Shell Prettifier, run the following commands:
 
 ```bash
-git clone --depth 1 git clone https://github.com/TechWhizKid/shell-prettifier.git
+git clone --depth 1 https://github.com/TechWhizKid/shell-prettifier.git
 ```
 ```bash
 cd shell-prettifier/
