@@ -24,5 +24,8 @@ echo -e "$(tput setaf 6)NOTE: The original settings of your terminal are saved i
 dconf dump /org/gnome/terminal/legacy/profiles:/ > ~/terminal_profile_backup.dconf
 dconf load /org/gnome/terminal/legacy/profiles:/ < configs/terminal_profile.dconf
 
+# Copy the custom agnoster theme in the themes folder
+cp configs/custom-agnoster.zsh-theme ~/.oh-my-zsh/themes/
+
 # Switch shell from bash to zsh
 chsh -s $(which zsh)

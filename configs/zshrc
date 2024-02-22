@@ -7,7 +7,7 @@ export ZSH=~/.oh-my-zsh
 # Choose the theme to load. You can set this to "random"
 # to load a random theme each time oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes for available themes.
-ZSH_THEME="agnoster"
+ZSH_THEME="custom-agnoster"
 
 # Define the list of themes to load when ZSH_THEME is set to "random".
 # This will override the default list of themes in ~/.oh-my-zsh/themes/.
